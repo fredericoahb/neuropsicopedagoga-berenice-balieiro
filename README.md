@@ -2,7 +2,7 @@
 
 # 🧠 Berenice Balieiro — Clinical Neuropsychopedagogue
 
-**Professional landing page for neuropsychopedagogical assessment and cognitive rehabilitation services.**
+**High-conversion landing page for neuropsychopedagogical assessment and cognitive rehabilitation — children, adults & elderly.**
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://typescriptlang.org/)
@@ -14,25 +14,18 @@
 
 ---
 
-## 📸 Preview
-
-<div align="center">
-  <img src="docs/preview.svg" alt="Landing Page Preview" width="700" />
-</div>
-
----
-
 ## ✨ Features
 
 | Feature | Description |
 |---------|-------------|
-| **8-Section Landing Page** | Hero, pain points, science explainer, process steps, differentials, about, indications, final CTA |
+| **12-Section High-Conversion Page** | Hero, pain identification, belief break, science explainer, about, process, audience tabs, differentials, trust, CTA |
+| **3 Target Audiences** | Tabbed sections for children, adults, and elderly |
 | **WhatsApp Integration** | Floating button + CTA buttons with pre-filled message |
-| **Scroll Animations** | Intersection Observer-powered fade-in reveals on each section |
-| **Responsive Design** | Mobile-first approach, optimized for all screen sizes |
+| **Scroll Animations** | Intersection Observer-powered fade-in reveals |
+| **Responsive Design** | Mobile-first, optimized for all screen sizes |
 | **SEO Optimized** | Meta tags, Open Graph, semantic HTML |
-| **Performance** | Static generation, optimized bundle (~95 KB first load) |
-| **Accessibility** | Semantic structure, ARIA labels, keyboard navigation |
+| **Performance** | Static generation, optimized bundle |
+| **Copywriting Strategy** | Authority-based clinical copy, belief-breaking, trust signals |
 
 ---
 
@@ -42,127 +35,64 @@
 - **Language:** [TypeScript](https://typescriptlang.org/)
 - **Styling:** [Tailwind CSS 3](https://tailwindcss.com/)
 - **Icons:** [Lucide React](https://lucide.dev/)
-- **Fonts:** DM Serif Display + DM Sans (Google Fonts)
+- **Fonts:** Playfair Display + Source Sans 3
 - **Hosting:** [Vercel](https://vercel.com/) (free tier)
 
 ---
 
 ## 🚀 Quick Start
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) 18+
-- [Git](https://git-scm.com/)
-
-### Local Development
-
 ```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/neuropsicopedagoga-berenice-balieiro.git
+git clone https://github.com/fredericoahb/neuropsicopedagoga-berenice-balieiro.git
 cd neuropsicopedagoga-berenice-balieiro
-
-# Install dependencies
 npm install
-
-# Start dev server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Production Build
-
-```bash
-npm run build
-npm start
-```
+Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
 ## ⚙️ Configuration
 
-Before deploying, update these values in `src/app/page.tsx`:
-
 ### 1. WhatsApp Number (required)
-
+In `src/app/page.tsx`, line 14:
 ```tsx
-// Line 14 — replace with real number (country code + area code + number)
-const WHATSAPP_NUMBER = '5527999998888'
+const WPP_NUM = '5527999998888' // replace with real number
 ```
 
 ### 2. Professional Photo (recommended)
-
-Place the photo at `public/berenice.jpg` and update the `AboutSection` component:
-
-```tsx
-import Image from 'next/image'
-
-// Replace the placeholder div with:
-<Image
-  src="/berenice.jpg"
-  alt="Berenice Balieiro"
-  fill
-  className="object-cover rounded-[2rem]"
-/>
-```
-
-### 3. Original Logo (optional)
-
-Save the logo to `public/logo.png` and update the `BrainLogo` component or use `next/image`.
+Save photo as `public/berenice.jpg` and update `AboutSection`.
 
 ---
 
-## 🌐 Deployment
-
-### Deploy to Vercel (recommended)
-
-#### Option A — Via GitHub Integration
-
-1. Push this repository to GitHub
-2. Go to [vercel.com/new](https://vercel.com/new)
-3. Import the repository
-4. Click **Deploy** — done!
-
-#### Option B — Via CLI
+## 🌐 Deploy
 
 ```bash
-npm i -g vercel
-vercel login
-vercel --prod
+# Push to GitHub, then import at vercel.com/new
+# Or via CLI:
+npm i -g vercel && vercel --prod
 ```
 
 ### Custom Domain (.com.br)
-
-After deploying to Vercel:
-
-1. Register your `.com.br` domain at [Registro.br](https://registro.br)
-2. In Vercel Dashboard → **Settings** → **Domains** → Add your domain
-3. Configure DNS records at Registro.br as instructed by Vercel:
-
 | Type | Name | Value |
 |------|------|-------|
 | `A` | `@` | `76.76.21.21` |
 | `CNAME` | `www` | `cname.vercel-dns.com` |
 
-> DNS propagation may take up to 48 hours.
-
 ---
 
-## 📁 Project Structure
+## 📁 Structure
 
 ```
 neuropsicopedagoga-berenice-balieiro/
-├── docs/
-│   └── preview.svg          # Landing page preview image
-├── public/                   # Static assets (logo, photos)
-├── src/
-│   └── app/
-│       ├── globals.css       # Tailwind + custom styles & animations
-│       ├── layout.tsx        # Root layout with metadata & SEO
-│       └── page.tsx          # Full landing page (all 8 sections)
-├── next.config.js
+├── public/
+│   └── logo.jpg              # Neural brain logo
+├── src/app/
+│   ├── globals.css            # Tailwind + animations
+│   ├── layout.tsx             # SEO metadata
+│   └── page.tsx               # Full 12-section landing page
 ├── package.json
-├── postcss.config.js
 ├── tailwind.config.js
 ├── tsconfig.json
 └── vercel.json
@@ -170,29 +100,12 @@ neuropsicopedagoga-berenice-balieiro/
 
 ---
 
-## 🎨 Design System
-
-| Token | Value | Usage |
-|-------|-------|-------|
-| `brand-600` | `#2196F3` | Primary blue — buttons, headings |
-| `brand-700` | `#1565C0` | Hover states |
-| `teal-500` | `#14ccc7` | Accent — badges, icons |
-| `navy-900` | `#0f1722` | Dark sections, footer |
-| Display font | DM Serif Display | Headings |
-| Body font | DM Sans | Paragraphs, UI |
-
----
-
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
-
----
+[MIT License](LICENSE)
 
 <div align="center">
 
-**Built with ❤️ for families seeking answers.**
-
-[⬆ Back to top](#-berenice-balieiro--clinical-neuropsychopedagogue)
+**Built with evidence-based strategy for families seeking answers.**
 
 </div>
