@@ -243,11 +243,8 @@ function AboutSection() {
           <div className="lg:col-span-2 flex justify-center">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-brand-200/30 to-teal-200/30 rounded-[2rem] blur-2xl"></div>
-              <div className="relative w-72 h-80 rounded-[2rem] bg-gradient-to-br from-brand-100 to-teal-50 flex flex-col items-center justify-center border border-white shadow-xl overflow-hidden">
-                {/* TROCAR PELO COMPONENTE Image COM A FOTO REAL */}
-                <Image src="/logo.jpg" alt="Berenice Balieiro" width={120} height={120} className="opacity-30" />
-                <span className="mt-3 text-brand-600 text-sm font-semibold">Foto Profissional</span>
-                <span className="text-gray-400 text-xs">Substituir por imagem real</span>
+              <div className="relative w-72 h-80 rounded-[2rem] border border-white shadow-xl overflow-hidden">
+                <Image src="/berenice.jpg" alt="Berenice Balieiro — Neuropsicopedagoga Clínica" fill className="object-cover object-top" sizes="288px" />
               </div>
             </div>
           </div>
