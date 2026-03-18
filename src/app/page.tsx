@@ -10,7 +10,7 @@ import {
   AlertTriangle, RefreshCw
 } from 'lucide-react'
 
-const WPP_NUM = '5500000000000'
+const WPP_NUM = '5521993431409'
 const WPP_MSG = encodeURIComponent('Olá! Gostaria de agendar uma avaliação neuropsicopedagógica.')
 const WPP_LINK = `https://wa.me/${WPP_NUM}?text=${WPP_MSG}`
 
