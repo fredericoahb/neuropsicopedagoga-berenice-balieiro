@@ -76,8 +76,8 @@ function Hero() {
               </span>
             </div>
             <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-[3.3rem] leading-[1.12] text-navy-800 anim-up d1">
-              Nem toda dificuldade é falta de esforço.
-              <span className="text-brand-500 block mt-2">Muitas são sinais que ainda não foram interpretados.</span>
+              Nem toda dificuldade de aprendizagem é preguiça ou falta de esforço.
+              <span className="text-brand-500 block mt-2">Às vezes, é o cérebro pedindo ajuda.</span>
             </h1>
             <p className="mt-7 text-lg text-gray-600 leading-relaxed max-w-xl anim-up d2">
               A neuropsicopedagogia investiga como o cérebro aprende, se organiza e regula emoções — e identifica o que precisa de apoio para funcionar melhor.
