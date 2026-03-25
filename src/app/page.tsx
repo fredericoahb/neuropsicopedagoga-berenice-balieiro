@@ -95,15 +95,15 @@ function Hero() {
               </a>
             </div>
           </div>
-          <div className="relative anim-up d5 hidden lg:flex justify-center">
+          <div className="relative anim-up d5 flex justify-center mt-10 lg:mt-0">
             <div className="absolute -inset-8 bg-gradient-to-br from-brand-200/20 to-accent-100/20 rounded-[3rem] blur-3xl"></div>
-            <div className="relative rounded-[2rem] overflow-hidden shadow-xl border border-white/80">
-              <Image src="/hero-child.jpg" alt="Criança com dificuldade de aprendizagem" width={480} height={320} className="object-cover" />
-              <div className="absolute -right-3 top-10 bg-white rounded-2xl shadow-lg px-4 py-3 border border-brand-100">
-                <div className="flex items-center gap-2 text-sm"><Activity className="w-5 h-5 text-accent-600" /><span className="text-navy-800 font-semibold">Funções Executivas</span></div>
+            <div className="relative rounded-2xl lg:rounded-[2rem] overflow-hidden shadow-xl border border-white/80">
+              <Image src="/hero-child.jpg" alt="Criança com dificuldade de aprendizagem" width={480} height={320} className="object-cover w-full" />
+              <div className="absolute -right-2 lg:-right-3 top-6 lg:top-10 bg-white rounded-xl lg:rounded-2xl shadow-lg px-3 lg:px-4 py-2 lg:py-3 border border-brand-100 hidden sm:flex">
+                <div className="flex items-center gap-2 text-xs lg:text-sm"><Activity className="w-4 h-4 lg:w-5 lg:h-5 text-accent-600" /><span className="text-navy-800 font-semibold">Funções Executivas</span></div>
               </div>
-              <div className="absolute -left-3 bottom-10 bg-white rounded-2xl shadow-lg px-4 py-3 border border-accent-100">
-                <div className="flex items-center gap-2 text-sm"><Brain className="w-5 h-5 text-brand-500" /><span className="text-navy-800 font-semibold">Reabilitação Cognitiva</span></div>
+              <div className="absolute -left-2 lg:-left-3 bottom-6 lg:bottom-10 bg-white rounded-xl lg:rounded-2xl shadow-lg px-3 lg:px-4 py-2 lg:py-3 border border-accent-100 hidden sm:flex">
+                <div className="flex items-center gap-2 text-xs lg:text-sm"><Brain className="w-4 h-4 lg:w-5 lg:h-5 text-brand-500" /><span className="text-navy-800 font-semibold">Reabilitação Cognitiva</span></div>
               </div>
             </div>
           </div>
