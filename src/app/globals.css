@@ -16,6 +16,9 @@ body {
   background: #f4f9fe;
   color: #1e2d3d;
   overflow-x: hidden;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-feature-settings: "liga" 0, "clig" 0;
+  font-feature-settings: "liga" 0, "clig" 0;
 }
 
 .hero-gradient {
