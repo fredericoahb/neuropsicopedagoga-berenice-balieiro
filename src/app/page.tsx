@@ -75,10 +75,10 @@ function Hero() {
                 Crianças · Adultos · Idosos
               </span>
             </div>
-            <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-[3.2rem] leading-[1.1] text-navy-900 anim-up d1 font-extrabold">
+            <h1 className="font-[family-name:var(--font-display)] text-[1.75rem] sm:text-4xl lg:text-[3.2rem] leading-[1.15] sm:leading-[1.1] text-navy-900 anim-up d1 font-bold sm:font-extrabold">
               Nem toda dificuldade de aprendizagem é preguiça ou falta de esforço.
             </h1>
-            <p className="font-[family-name:var(--font-display)] text-2xl sm:text-3xl text-brand-500 mt-4 font-bold leading-snug anim-up d2">
+            <p className="font-[family-name:var(--font-display)] text-xl sm:text-2xl lg:text-3xl text-brand-500 mt-3 sm:mt-4 font-bold leading-snug anim-up d2">
               Às vezes, é o cérebro pedindo ajuda.
             </p>
             <p className="mt-7 text-base text-gray-600 leading-relaxed max-w-lg anim-up d3 font-[family-name:var(--font-body)]">
