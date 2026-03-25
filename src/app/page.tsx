@@ -241,7 +241,7 @@ function AboutSection() {
   return (
     <section id="sobre" className="py-28 bg-gradient-to-b from-white to-brand-50/30" ref={ref}>
       <div className="max-w-6xl mx-auto px-6">
-        <div className={`grid lg:grid-cols-5 gap-14 items-center ${vis ? 'anim-up' : 'opacity-0'}`}>
+        <div className={`grid lg:grid-cols-5 gap-14 items-start lg:items-center ${vis ? 'anim-up' : 'opacity-0'}`}>
           <div className="lg:col-span-2 flex justify-center">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-brand-200/25 to-accent-100/25 rounded-[2rem] blur-2xl"></div>
@@ -250,18 +250,18 @@ function AboutSection() {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-3 text-left">
             <span className="text-accent-600 text-sm font-bold uppercase tracking-[0.2em]">Quem sou</span>
-            <h2 className="font-[family-name:var(--font-display)] text-3xl sm:text-4xl text-navy-900 mt-3 leading-tight font-extrabold">
+            <h2 className="font-[family-name:var(--font-display)] text-3xl sm:text-4xl text-navy-900 mt-3 leading-tight font-extrabold text-left">
               Berenice <span className="text-brand-500">Balieiro</span>
             </h2>
-            <p className="mt-6 text-gray-600 leading-relaxed text-base">
+            <p className="mt-6 text-gray-600 leading-relaxed text-base text-left">
               Neuropsicopedagoga clínica com formação multidisciplinar em <strong className="text-navy-900">neurociência</strong> do comportamento, <strong className="text-navy-900">aprendizagem</strong> e <strong className="text-navy-900">reabilitação cognitiva</strong>.
             </p>
-            <p className="mt-4 text-gray-500 leading-relaxed text-base">
+            <p className="mt-4 text-gray-500 leading-relaxed text-base text-left">
               Busco compreender a causa real das dificuldades — integrando neurociência, educação e comportamento — para construir intervenções que fazem diferença prática.
             </p>
-            <p className="mt-4 text-gray-500 leading-relaxed text-base">
+            <p className="mt-4 text-gray-500 leading-relaxed text-base text-left">
               Cada pessoa tem um funcionamento único. Minha abordagem combina avaliação técnica, escuta clínica e orientações aplicáveis no cotidiano.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
